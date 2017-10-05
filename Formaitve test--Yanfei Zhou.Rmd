@@ -1,0 +1,5 @@
+D1 <- read.csv("~/Desktop/HMXPC13_DI_v2_5-14-14.csv",head = TRUE)
+sum(D1$course_id == "HarvardX/CS50x/2012")
+sum(D1$start_time_DI == "2012-10-15")
+D2 <- data.frame(D1$userid_DI,D1$start_time_DI,D1$final_cc_cname_DI)
+D2 <- subset(D2, D1.final_cc_cname_DI == "United States")
